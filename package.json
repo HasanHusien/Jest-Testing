@@ -1,0 +1,30 @@
+{
+  "name": "unit_testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "Hassan",
+  "license": "ISC",
+  "description": "For unit testing",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "//1": "Collect Coverage Option",
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html"
+    ],
+    "//2": "Coverage Directory",
+    "coverageDirectory": "reports",
+    "collectCoverageFrom": [
+      "**/*.{js,jsx,ts}"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/build/"
+    ]
+  }
+  }
